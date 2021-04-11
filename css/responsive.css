@@ -1,0 +1,249 @@
+ 
+ @media only screen and (max-width:  1423px){
+       .main-sector{
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;text-align: center;margin-left: 5%;
+
+       }
+       .main-sector div{
+         width: 100%;border: 0;
+       }
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ @media only screen and (max-width:  1150px){
+
+.top-logo-text{
+      width: 100%;
+      justify-content: center;
+      
+      
+      
+      
+}
+.main-box{
+    font-size: 18px;
+     
+}
+
+
+.logo{
+    width: 100%;
+    margin-top: 0vh;font-size: 20px;
+
+}
+
+.top-text{
+    width: 100%; font-size: 20px;
+
+     
+}
+.logo-text li{
+    font-size: 18px;
+}
+ }
+ @media only screen and (max-width:  1150px){
+
+
+ body{
+     overflow-x: hidden;
+ }
+
+.table, .school-presentation{
+    overflow-x: auto;
+    width: 50%;
+}
+
+
+
+ }
+ @media only screen and (max-width:  1220px){
+    .block-news{
+        width: 100%;
+        display: grid;
+        grid-template-columns: max-content  ;
+        justify-content: center;
+        
+  
+    }
+    .block-news div{
+        border: solid;
+        width: 500px;
+        height: auto;
+    }
+ }
+ @media only screen and (max-width:  650px){
+    .block-news div{
+        border: solid;
+        width: 400px;
+        height: auto;
+    }
+    .top-logo-text ul{
+        font-size: 15px;
+    }
+    .picture-links{
+        grid-template-columns: max-content max-content;
+    }
+ }
+ @media only screen and (max-width:  450px){
+    .block-news div{
+        border: solid;
+        width: 320px;
+        height: auto;
+    }
+ }
+
+ @media screen and (max-width: 900px) {
+    footer{
+      position: relative;
+      bottom: 0px;
+    }
+    .main-content{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .main-content .box{
+      margin: 5px 0;
+    }
+  }
+
+/* dropwown menu Responsive code start */
+@media screen and (max-width: 1550px){
+    .wrapper nav{
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    nav .content .links{
+      margin-left: 30px;
+    }
+    .content .links li a{
+      padding: 8px 13px;
+    }
+    .wrapper .search-box{
+      max-width: calc(100% - 100px);
+    }
+    .wrapper .search-box input{
+      padding: 0 100px 0 15px;
+    }
+    #btn-login{
+      font-size: 15px;
+      width: 100px;
+      
+    }
+  }
+  
+  @media screen and (max-width: 1480px){
+    .wrapper .menu-icon{
+      display: block;
+    }
+    .wrapper #show-menu:checked ~ .menu-icon i::before{
+      content: "\f00d";
+    }
+    nav .content .links{
+      display: block;
+      position: fixed;
+      background: #14181f;
+      height: 100%;
+      width: 100%;
+      top: 70px;
+      left: -100%;
+      margin-left: 0;
+      max-width: 350px;
+      overflow-y: auto;
+      padding-bottom: 100px;
+      transition: all 0.3s ease;
+    }
+    nav #show-menu:checked ~ .content .links{
+      left: 0%;
+    }
+    .content .links li{
+      margin: 15px 20px;
+    }
+    .content .links li a,
+    .content .links li label{
+      line-height: 40px;
+      font-size: 20px;
+      display: block;
+      padding: 8px 18px;
+      cursor: pointer;
+    }
+    .content .links li a.desktop-link{
+      display: none;
+    }
+  
+    /* dropdown responsive code start */
+    .content .links ul,
+    .content .links .mega-menu,
+    .content .links .mega-menu2,
+    .content .links .mega-menu3,
+    .content .links ul ul{
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      background: none;
+      max-height: 0px;
+      overflow: hidden;
+    }
+    .content .links #show-features2:checked ~ ul,
+    .content .links #show-features4:checked ~ ul,
+    .content .links #show-features5:checked ~ ul,
+    .content .links #show-features3:checked ~ ul,
+    .content .links #show-features:checked ~ ul,
+    .content .links #show-services:checked ~ ul,
+    .content .links #show-services2:checked ~ ul,
+    .content .links #show-drop:checked ~ ul,
+    .content .links #show-items:checked ~ ul,
+    .content .links #show-items2:checked ~ ul{
+      max-height: 100vh;
+       
+    }
+    .content .links ul li{
+      margin: 7px 20px;
+    }
+    .content .links ul li a{
+      font-size: 18px;
+      line-height: 30px;
+      border-radius: 5px!important;
+    }
+  }
+  
+  @media screen and (max-width: 400px){
+    .wrapper nav{
+      padding: 0 10px;
+    }
+    .content .logo a{
+      font-size: 27px;
+    }
+    .wrapper .search-box{
+      max-width: calc(100% - 70px);
+    }
+    .wrapper .search-box .go-icon{
+      width: 30px;
+      right: 0;
+    }
+    .wrapper .search-box input{
+      padding-right: 30px;
+    }
+  }
+  
+  .dummy-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    z-index: -1;
+    padding: 0 20px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+  .dummy-text h2{
+    font-size: 45px;
+    margin: 5px 0;
+  }
