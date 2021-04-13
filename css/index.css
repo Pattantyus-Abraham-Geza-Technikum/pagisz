@@ -84,6 +84,9 @@ video{
 
 }
  
+footer{
+  z-index: -1;
+}
 
 footer a{
     text-decoration: none;
@@ -322,8 +325,28 @@ h1{
 
 
 
-
-
+/*Menu animation*/
+ul.links li ul li a{
+  position: relative;
+  text-align: center;
+  text-align-last: center;
+}
+ul.links li ul li a::before{
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s ;
+  display: block;
+  left: 10%;
+  bottom: 10px;
+  content: '';
+  margin: 0;
+}
+ul.links li ul li a:hover::before,
+ul.links li ul li label:hover::before{
+  width: 80%;
+}
 
 
 
@@ -395,7 +418,6 @@ nav .content .links{
 .content .links li a:hover,
 .content .links li label:hover{
   background: #323c4e;
-  text-decoration: underline;
 }
 .wrapper .search-icon,
 .wrapper .menu-icon{

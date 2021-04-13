@@ -116,12 +116,17 @@
 
 /* dropwown menu Responsive code start */
 @media screen and (max-width: 1550px){
+    .wrapper{
+      z-index: 3;
+    }
     .wrapper nav{
       max-width: 100%;
       padding: 0 20px;
+
     }
     nav .content .links{
       margin-left: 30px;
+      z-index: 2;
     }
     .content .links li a{
       padding: 8px 13px;
@@ -149,11 +154,11 @@
     nav .content .links{
       display: block;
       position: fixed;
-      background: #14181f;
+      background: #171c24;
       height: 100%;
       width: 100%;
-      top: 70px;
-      left: -100%;
+      top: 100%;
+      left: 0;
       margin-left: 0;
       max-width: 350px;
       overflow-y: auto;
@@ -161,7 +166,7 @@
       transition: all 0.3s ease;
     }
     nav #show-menu:checked ~ .content .links{
-      left: 0%;
+        top: 60px;
     }
     .content .links li{
       margin: 15px 20px;
