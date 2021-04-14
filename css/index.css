@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0;
+   padding:0;
+}
 body{
      
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
-     margin:0;
-      padding:0;
        overflow-x: hidden;   
       width: 100%;
      
@@ -302,24 +305,32 @@ h1{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 3px 5px grey; 
+  box-shadow: inset 0 3px 5px rgba(128, 128, 128, 0.74); 
   border-radius: 40px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(93, 88, 88); 
+  background: #8f8f8f;
   border-radius: 80px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #000000; 
+  background: #494949; 
   
 }
 
  
-
+ul.links::-webkit-scrollbar-track{
+  box-shadow: none;
+  border-radius: 2rem 0 0 0;
+  box-shadow: none;
+  background: #9399ec5b;
+}
+ul.links::-webkit-scrollbar-thumb {
+  border-radius: 2rem 0 2rem;
+}
 
 
 
@@ -336,7 +347,7 @@ ul.links li ul li a::before{
   background-color: #fff;
   height: 2px;
   width: 0;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s ;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
   display: block;
   left: 10%;
   bottom: 10px;
@@ -363,13 +374,11 @@ ul.links li ul li label:hover::before{
   /*menu drop*/
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
 }
 .wrapper{
   background: #171c24;
