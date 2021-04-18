@@ -9,11 +9,33 @@ body{
     font-size: 18px;
        overflow-x: hidden;   
       width: 100%;
-     
-     
-
 }
-
+[data-title]{
+  position: relative;
+}
+[data-title]::after{
+  content: attr(data-title);
+  position: absolute;
+  left: 150%;
+  padding: 0.3em 0.5em;
+  margin-left: 10px;
+  color: #f0f0f0;
+  white-space: nowrap;
+  visibility: hidden;
+  transition: all 0.1s ease;
+  background-color: #3a609c;
+  border-radius: 5px;
+  opacity: 0;
+  transform-origin: center;
+  transform: scale(0);
+}
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease;
+  visibility: visible;
+  transform: scale(1);
+  box-shadow:inset -2px -4px #171c24a2;
+}
  .contacts{
      width: 100%;
      background: linear-gradient(rgb(15, 15, 32), rgb(4, 4, 12));
@@ -21,9 +43,10 @@ body{
      flex-wrap: wrap;
      color: white;
      font-size: 15px;
-     height: 20vh;
-     justify-content: center; 
-     padding-top: 60px;animation: 1s head;
+     height: 10vh;
+     justify-content: flex-end;
+     padding:0 1em;
+     animation: 1s head;
       
  }
  .contacts div{
@@ -155,9 +178,11 @@ footer a{
     justify-content: center;
     text-align: center;
 
+}
 
-
-     
+/*Makes selection of these elements invisible*/
+img, iframe, video{
+  user-select: none;
 }
 .right{
     width: 20vw;
@@ -382,51 +407,76 @@ ul.links li ul li label:hover::before{
 }
 .wrapper{
   background: #171c24;
-  position: fixed;animation: head 2s;
-  width: 100%;
+  position: fixed;
+  animation: head 2s;
+  width: 140px;
+  height: 100vh;
+  user-select: none;
+  padding: 10px 5px;
 }
- 
+
 .wrapper nav{
-  position: relative;
-  display: flex;
-  max-width: calc(100% - 200px);
-  margin: 0 auto;
-  height: 70px;
-  align-items: center;
+  width: 100%;
+  height: 100%;
   justify-content: space-between;
+  margin: 0 auto;
+}
+.wrapper nav,
+nav .content,
+nav .content .links,
+.content .links li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 nav .content{
-  display: flex;
-  align-items: center;
+  z-index: 2;
+  justify-content: space-evenly;
 }
-nav .content .links{
-  margin-left: 80px;
-  display: flex;
-}
-.content .logo a{
-  color: #fff;
-  font-size: 30px;
-  font-weight: 600;
+nav ul.links{
+  width: 20vw;
+  row-gap: 10px;
 }
 .content .links li{
   list-style: none;
-  line-height: 70px;
+  height: clamp(6vh, 8vh, 8vh);
+  width: clamp(6vh, 8vh, 80%);
+  margin: 0 auto;
+  padding:5px;
+  border-radius: 5px;
+  justify-content: center;
+}
+.content .links i{
+  font-size: 35px;
+}
+.links img{
+  transform: scale(.85);
+}
+nav .logo{
+  height: clamp(15vh, 20vh, 20vh);
+  padding: 0;
+  margin:0 0 -2em 10px;
+}
+.logo a{
+  flex-direction: row;
+  justify-content: center;
+}
+div.logo a svg{
+  top: 50%;
+  left: 50%;
 }
 .content .links li a,
 .content .links li label{
   color: #fff;
   font-size: 18px;
   font-weight: 500;
-  padding: 9px 17px;
-  border-radius: 5px;
   transition: all 0.3s ease;
 }
 .content .links li label{
   display: none;
 }
-.content .links li a:hover,
-.content .links li label:hover{
-  background: #323c4e;
+.content .links li:hover{
+  background-color: #ffffff32;
 }
 .wrapper .search-icon,
 .wrapper .menu-icon{
@@ -491,8 +541,8 @@ nav .content .links{
 /* Dropdown Menu code start */
 .content .links ul{
   position: absolute;
+  left: 18vw;
   background: #171c24;
-  top: 80px;
   z-index: -1;
   opacity: 0;
   visibility: hidden;
@@ -501,8 +551,9 @@ nav .content .links{
 .content .links .mega-menu{
   position: absolute;
   background: #171c24;
-  top: 80px;
+  top: 0;
   z-index: -1;
+  top: 0;
   opacity: 0;
   visibility: hidden;
   width: 250px;
@@ -511,7 +562,7 @@ nav .content .links{
 .content .links .mega-menu2{
   position: absolute;
   background: #171c24;
-  top: 80px;
+  top: 0;
   z-index: -1;
   opacity: 0;
   visibility: hidden;
@@ -521,7 +572,7 @@ nav .content .links{
 .content .links .mega-menu3{
   position: absolute;
   background: #171c24;
-  top: 80px;
+  top: 0;
   z-index: -1;
   opacity: 0;
   visibility: hidden;
@@ -530,11 +581,10 @@ nav .content .links{
 
 
 
-.content .links li:hover > ul{
-  top: 70px;
+/* .content .links li:hover > ul{
+  position: absolute;
+  top: 0;
   opacity: 1;
-  
-   
   visibility: visible;
   transition: all 0.3s ease;
 }
@@ -555,7 +605,7 @@ nav .content .links{
 .content .links ul li:hover ul{
   top: 0;
 }
-
+ */
 
 
 /* footer design*/
@@ -590,12 +640,11 @@ footer a{
 footer{
   position: relative;
   bottom: 0px;
-  width: 100%;
+  width: calc(100% - 140px);
   background: #111;
   color: floralwhite;
   border-top: rgb(138, 55, 55) 5px solid ;
-  margin-top: 50vh;
-   
+  margin: 50vh 0 0 auto;
 }
 .main-content{
   display: flex;
@@ -732,9 +781,10 @@ footer{
 
 
 #head.active{
-background-color: rgba(71, 63, 63, 0.719);
- height:10vh;
- padding-top: 10px;color: black;
+background-color: #473f3fda;
+ height:100%;
+ padding-top: 10px;
+ color: black;
   
  
 }
@@ -749,31 +799,30 @@ background-color: rgba(71, 63, 63, 0.719);
 
 
 #btn-login{
-  background-color: rgb(89, 146, 146);
+  background-color: #49a0c2;
   font-size: 20px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   border: solid 5px;
-  border-image: linear-gradient(0deg, #027294, #012168) 1;
+  border-image: radial-gradient( #33b7df, #1140a5) 1;
   cursor: pointer;
   width: 140px;
   height: 50px;
-  margin: 0 0 20px 150px;
   transform: translateY(20%);
-  color: #490b0b;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #btn-login:hover{
-   
-  background-color: rgb(142, 142, 175);
-   
+  transform:translateY(20%) scale(0.94);
 }
 /* lanimation at the begining*/
 @keyframes  head{
   0%{
-    opacity: 0;
-    top:-200px
+    left:-200px
   }
   100%{
-    opacity: 1;top: 0;
+    left: 0;
   }
 }
 
