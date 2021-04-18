@@ -10,7 +10,6 @@ body{
        overflow-x: hidden;   
       width: 100%;
 }
-<<<<<<< HEAD
 [data-title]{
   position: relative;
 }
@@ -54,7 +53,6 @@ body{
      margin-left: 35px;
  }
   
-=======
 
 .contacts{
   width: 100%;
@@ -72,7 +70,7 @@ body{
   margin-left: 35px;
 }
 
->>>>>>> bff36c9396ac3e2bad6a0613a0877418ea270d5e
+
 .main-box{
  width: 100%;
  justify-content: center;
@@ -190,20 +188,12 @@ flex-direction: row;
  margin-top: 8vw;
  justify-content: center;
  text-align: center;
-<<<<<<< HEAD
-=======
-
->>>>>>> bff36c9396ac3e2bad6a0613a0877418ea270d5e
 
 }
 
-<<<<<<< HEAD
 /*Makes selection of these elements invisible*/
 img, iframe, video{
   user-select: none;
-=======
-  
->>>>>>> bff36c9396ac3e2bad6a0613a0877418ea270d5e
 }
 .right{
  width: 20vw;
@@ -420,7 +410,6 @@ ul.links li ul li label:hover::before{
   /*menu drop*/
 
 
-<<<<<<< HEAD
 *{
   margin: 0;
   padding: 0;
@@ -628,7 +617,6 @@ div.logo a svg{
   top: 0;
 }
  */
-=======
   *{
     margin: 0;
     padding: 0;
@@ -810,8 +798,6 @@ div.logo a svg{
   .content .links ul li:hover ul{
     top: 0;
   }
-
->>>>>>> bff36c9396ac3e2bad6a0613a0877418ea270d5e
 
 
 /* footer design*/
