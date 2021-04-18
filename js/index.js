@@ -32,7 +32,3 @@ $(window).scroll(function() {
 		$('#rightside').addClass('active');
   }
 });
- 
-
-
- 
