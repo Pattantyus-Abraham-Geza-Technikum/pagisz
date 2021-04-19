@@ -36,39 +36,49 @@ body{
   box-shadow:inset -2px -4px #171c24a2;
 }
  .contacts{
-     width: 100%;
-     background: linear-gradient(rgb(15, 15, 32), rgb(4, 4, 12));
-     display: flex;
-     flex-wrap: wrap;
-     color: white; flex-direction: row;
-     font-size: 40px;
-     height: min-content;
-     text-align: center;
-     padding:10px 150px 20px;
-     margin-right: 320px;
-      justify-content: center;
-     animation: 1s head; 
-      
- }
-  
-  
- #btn-login{
-  background-color: #49a0c2;
-  font-size: 20px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  border: solid 5px;
-  border-image: radial-gradient( #33b7df, #1140a5) 1;
-  cursor: pointer;
-  width: 140px;  margin-top: -8vh;margin-right: 20px;
-  height: 50px;   
-  transform: translateY(20%);
-  color: #f0f0f0; 
-  display: flex; 
-  justify-content: center;
-  align-items: center;  
+  width: 100%;
+  background: linear-gradient(rgb(15, 15, 32), rgb(4, 4, 12));
+  display: flex;
+  flex-wrap: wrap;
+  color: white;  
+  font-size: 40px;
+  height: 8vh; 
+  text-align: center;
+  padding:10px 150px 20px;
+    
+   justify-content: center;
+  animation: 1s head; 
+   
+}
+#login-box{
+ justify-content: flex-end;
+}
+#school-name{
+ display: none;
+}
+#btn-login{
+background-color: #49a0c2;
+font-size: 20px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+border: solid 5px;
+border-image: radial-gradient( #33b7df, #1140a5) 1;
+cursor: pointer;
+width: 140px;  margin-top: -8vh;margin-right: 40px;
+height: 50px;   
+transform: translateY(20%);
+color: #f0f0f0; 
+display: flex; 
+justify-content: center;
+align-items: center;  
 }
 #btn-login:hover{
-  transform:translateY(20%) scale(0.94);
+transform:translateY(20%) scale(0.94);
+}
+#school-name{
+ width: 100%;
+ font-size: 20px;
+ text-align: center;
+ justify-content: center;
 }
   
 
