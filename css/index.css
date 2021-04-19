@@ -40,17 +40,36 @@ body{
      background: linear-gradient(rgb(15, 15, 32), rgb(4, 4, 12));
      display: flex;
      flex-wrap: wrap;
-     color: white;
-     font-size: 15px;
-     height: 10vh;
-     justify-content: flex-end;
-     padding:0 0.5em;
-     animation: 1s head;
+     color: white; flex-direction: row;
+     font-size: 40px;
+     height: min-content;
+     text-align: center;
+     padding:10px 150px 20px;
+     margin-right: 320px;
+      justify-content: center;
+     animation: 1s head; 
       
  }
- .contacts div{
-     margin-left: 35px;
- }
+  
+  
+ #btn-login{
+  background-color: #49a0c2;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border: solid 5px;
+  border-image: radial-gradient( #33b7df, #1140a5) 1;
+  cursor: pointer;
+  width: 140px;  margin-top: -8vh;margin-right: 20px;
+  height: 50px;   
+  transform: translateY(20%);
+  color: #f0f0f0; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;  
+}
+#btn-login:hover{
+  transform:translateY(20%) scale(0.94);
+}
   
 
 .main-box{
