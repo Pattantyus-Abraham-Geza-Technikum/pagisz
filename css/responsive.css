@@ -10,10 +10,17 @@
        .main-sector div{
          width: 100%;border: 0;
        }
+       .wrapper{
+         width: 3vw;
+       }
+       .wrapper nav .logo{
+         display: none;
+       }
+       #head.active{
+         height: 10vh;
+         border-radius:0 0 7.5px 0;
+       }
  }
- 
- 
- 
  
  
  
@@ -24,9 +31,6 @@
       width: 100%;
       justify-content: center;
       
-      
-      
-      
 }
 .main-box{
     font-size: 18px;
@@ -34,7 +38,7 @@
 }
 
 
-.logo{
+.top-logo-text .logo{
     width: 100%;
     margin-top: 0vh;font-size: 20px;
 
@@ -120,7 +124,6 @@
       z-index: 3;
     }
     .wrapper nav{
-      max-width: 100%;
       padding: 0 20px;
 
     }
@@ -144,12 +147,6 @@
   }
   
   @media screen and (max-width: 1480px){
-    .wrapper .menu-icon{
-      display: block;
-    }
-    .wrapper #show-menu:checked ~ .menu-icon i::before{
-      content: "\f00d";
-    }
     nav .content .links{
       display: block;
       position: fixed;

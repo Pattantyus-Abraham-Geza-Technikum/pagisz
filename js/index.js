@@ -32,3 +32,10 @@ $(window).scroll(function() {
 		$('#rightside').addClass('active');
   }
 });
+
+//Side-bar drop down
+const 
+if($('#head').hasClass('active'))
+{
+
+}

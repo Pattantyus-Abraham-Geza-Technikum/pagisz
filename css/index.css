@@ -570,22 +570,6 @@ div.logo a svg{
 
 
 
-/*Menu opener*/
-.drop{
-  position: relative;
-  width: 100%;
-  margin-top: 1em;
-  padding: 0.5em 1em;
-}
-.drop::before{
-  position: absolute;
-  font-family: "Font Awesome 5 Free";
-  content: '\f103';
-  color: #f0f0f0;
-  top: 0;
-  left: 50%;
-}
-
 /*I'll uncomment it if I finish the side-bar*/
 
 /* .content .links li:hover > ul{
