@@ -1,8 +1,12 @@
+const dropIcon = $('#drop');
+const head = $('#head');
+
 $(window).scroll(function() {
 	var $height = $(window).scrollTop();
-	$('#head').removeClass('active');
-  if($height > 90) {
-		$('#head').addClass('active');
+	head.removeClass('active');
+  if($height > 90 && !(dropIcon.hasClass('dropped') || head.hasClass('active'))) {
+		head.addClass('active');
+		dropIcon.addClass('active');
 	}
 });
 
@@ -33,9 +37,7 @@ $(window).scroll(function() {
   }
 });
 
-//Side-bar drop down
-const 
-if($('#head').hasClass('active'))
-{
-
-}
+dropIcon.click(()=>{
+	dropIcon.toggleClass('dropped');
+	head.toggleClass('active');
+});

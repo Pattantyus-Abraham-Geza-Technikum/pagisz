@@ -400,7 +400,7 @@ ul.links li ul li label:hover::before{
   height: 100vh;
   user-select: none;
   padding: 10px 5px;
-  
+  z-index: 100;
 }
 
 .wrapper nav{
@@ -424,7 +424,7 @@ nav .content{
 }
 nav > * > ul.links{
   width: 20vw;
-  row-gap: 10px;
+  row-gap: 0.2em;
 }
 .content .links li{
   list-style: none;
@@ -436,7 +436,7 @@ nav > * > ul.links{
   justify-content: center;
 }
 .content .links i{
-  font-size: 35px;
+  font-size: 1.5em;
 }
 .links img{
   transform: scale(.85);
@@ -568,6 +568,18 @@ div.logo a svg{
   width: 243px;
 }
 
+#drop{
+  cursor: pointer;
+  display: none;
+  color: #f0f0f0;
+  font-size: 1.1em;
+}
+#drop.active{
+  display: block;
+}
+#drop.dropped{
+  transform: rotate(90deg);
+}
 
 
 /*I'll uncomment it if I finish the side-bar*/
@@ -771,7 +783,7 @@ footer{
 
 #head.active{
 background-color: #473f3fda;
- height:15vh;
+ height:20vh;
  color: black;
  border-radius: 0 0 2em 0;
  }
