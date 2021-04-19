@@ -877,10 +877,10 @@ background-color: #473f3fda;
 /* left side animation with js.*/
 @keyframes leftside-animation{
   0%{
-    margin-left: 640px ;
+    opacity:0;
   }
   100%{
-    margin-left: 0px;
+    opacity: 1; ;
   }
 }
 
@@ -896,17 +896,17 @@ background-color: #473f3fda;
             transition: all 1s ease-in-out;
   }
 
-#leftside.active{opacity:1; animation: leftside-animation 2s;   }
+#leftside.active{opacity:1; animation: leftside-animation 1s;   }
 
 
 /* right side animation with js.*/
 
 @keyframes rightside-animation{
   0%{
-    margin-right: 640px ;
+    opacity: 0;  
   }
   100%{
-    margin-right: 0px;
+    opacity: 1;  
   }
 }
 
