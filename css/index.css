@@ -909,5 +909,67 @@ background-color: #473f3fda;
 #rightside.active{opacity:1; animation: rightside-animation 2s;   }
 
 
+.IMG-slider{
+  height: 500px;
+  width: 900px;
+  position: relative;
+  margin: auto;
+  margin-top: 30vh; 
+  margin-bottom: -40vh; 
+}
+.IMG-slider img{
+ 
+}
+.IMG-slider .images  {
+  height: 50%;
+  width: 50%;margin: auto;
+  text-align: center;
+}
+.IMG-slider .images   #images{
+  height: 100%;
+  width: 100%;margin: auto;
+}
+.btm-slides{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.btm-slides span{
+  height: 15px;
+  width: 50px;
+  border: 2px solid white;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.sliders{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  cursor: pointer;
+  border: 2px solid rgb(0, 0, 0);
+  background: rgba(255,255,255,0.1);
+}
+.sliders:hover{
+  background: rgba(255,255,255,0.2);
+}
+ 
+ .left{
+   margin-top: -40px; z-index:  99;
+ }
+.right{
+  right:  0;height: 45px; margin-top: -40px;text-align: right; z-index:  99;
+}
+.sliders span  {
+  line-height:40px;
+  font-size: 35px;
+  color: rgb(148, 3, 3);
+}
+
+
+
+/*end img slider*/
 
 
