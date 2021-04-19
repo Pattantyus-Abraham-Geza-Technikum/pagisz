@@ -273,5 +273,10 @@
        vertical-align: middle;
 
     }
-
+    .sliders{
+      margin-top: 50px; border: none;
+    }
+    .right{
+      margin-left: 30px;
+    }
   }
