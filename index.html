@@ -519,13 +519,53 @@
 
 </main>
 
+<!--IMG Slider-->
+
+<div tabindex="-1" class="IMG-slider">
+  <h1 style="margin-bottom: 50px; text-align: center;" >Partnereink</h1>
+  <div class="images">
+   <a href="https://www.nemak.com/" target="_blank"> <img id="images" src="../pagisz/images/nemak.png"></a>
+  <a href="https://www.audi.hu/" target="_blank">  <img id="images" src="../pagisz/images/audi2.jpg"></a>
+   <a href="https://www.uni.sze.hu/" target="_blank"> <img id="images" src="../pagisz/images/szécheny.png"></a>
+  <a href="https://www.eon.hu/hu/lakossagi.html" target="_blank"> <img id="images" src="../pagisz/images/eon.jpg"></a> 
+  <a href="https://engineerinstruments.com/?lang=en" target="_blank">  <img id="images" src="../pagisz/images/engineer.png"></a>
+  <a href="http://www.atigyor.hu/" target="_blank">  <img id="images" src="../pagisz/images/easy rider.png"></a>
+  <a href="http://www.ipgyor.hu/vill-korr-hungaria-villamosipari-kft-_hu" target="_blank" >  <img id="images" src="../pagisz/images/vill-kor.jpg"></a>
+   <a href="https://melecs.com/rolunk/?lang=hu" target="_blank"> <img id="images" src="../pagisz/images/melecs.png"></a>
+  </div>
+
+<div class="sliders left" onclick="side_slide(-1)">
+    <span class="fas fa-angle-left"></span>
+  </div>
+<div class="sliders right" onclick="side_slide(1)">
+    <span class="fas fa-angle-right"></span>
+  </div>
+</div>
+<script>
+  var indexValue = 1;
+  showImg(indexValue);
+  function btm_slide(e){showImg(indexValue = e);}
+  function side_slide(e){showImg(indexValue += e);}
+  function showImg(e){
+    var i;
+    const img = document.querySelectorAll('#images');
+    const slider = document.querySelectorAll('.btm-slides span');
+    if(e > img.length){indexValue = 1}
+    if(e < 1){indexValue = img.length}
+    for(i = 0; i < img.length; i++){
+      img[i].style.display = "none";
+    }
+    for(i = 0; i < slider.length; i++){
+      slider[i].style.background = "rgba(255,255,255,0.1)";
+    }
+    img[indexValue-1].style.display = "block";
+    slider[indexValue-1].style.background = "white";
+  }
+</script>
 
 
 
-
-
-
-
+<!--end IMG Slider-->
   
    
   
