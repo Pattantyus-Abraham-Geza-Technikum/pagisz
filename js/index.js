@@ -30,6 +30,15 @@ $(window).scroll(function() {
 
 $(window).scroll(function() {
 	var $height = $(window).scrollTop();
+	$('#anchor-to-top').removeClass('active');
+  if($height > 90) {
+		$('#anchor-to-top').addClass('active');
+	}
+});
+
+
+$(window).scroll(function() {
+	var $height = $(window).scrollTop();
 	$('#rightside').removeClass('active');
 
   if($height > 120) {
