@@ -927,11 +927,11 @@ background-color: #473f3fda;
 
 .IMG-slider{
   height: 500px;
-  width: 900px;
+  width: 80%;
   position: relative;
   margin: auto;
   margin-top: 30vh; 
-  margin-bottom: -40vh; 
+  margin-bottom: -40vh; justify-content: center;
 }
 .IMG-slider img{
  
@@ -939,7 +939,7 @@ background-color: #473f3fda;
 .IMG-slider .images  {
   height: 50%;
   width: 50%;margin: auto;
-  text-align: center;
+  text-align: center;  
 }
 .IMG-slider .images   #images{
   height: 100%;
@@ -949,7 +949,7 @@ background-color: #473f3fda;
   position: absolute;
   bottom: 20px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translatey(-50%);
   display: flex;
 }
 .btm-slides span{
@@ -965,7 +965,7 @@ background-color: #473f3fda;
   transform: translateY(-50%);
   width: 45px;
   cursor: pointer;
-  border: 2px solid rgb(0, 0, 0);
+  border: none;
   background: rgba(255,255,255,0.1);
 }
 .sliders:hover{
@@ -983,9 +983,5 @@ background-color: #473f3fda;
   font-size: 35px;
   color: rgb(148, 3, 3);
 }
-
-
-
-/*end img slider*/
 
 
