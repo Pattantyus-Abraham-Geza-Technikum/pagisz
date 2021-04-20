@@ -616,13 +616,18 @@ div.logo a svg{
   cursor: pointer;
   display: none;
   color: #f0f0f0;
-  font-size: 1.1em;
+  font-size: 1.5em;
+  height: 100vh;
 }
 #drop.active{
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #drop.dropped{
-  transform: rotate(90deg);
+  position: absolute;
+  transform: rotate(180deg);
+  display: block;
 }
 
 
@@ -685,8 +690,7 @@ footer a{
 }
 footer{
   position: relative;
-  bottom: 0px;
-  width: calc 100vw;
+  width: 100vw;
   background: #111;
   color: floralwhite;
   border-top: rgb(138, 55, 55) 5px solid ;
@@ -698,6 +702,7 @@ footer{
 .main-content .box{
   flex-basis: 50%;
   padding: 10px 20px;
+  bottom: 0;
 }
 .box h2{
   font-size: 1.125rem;
@@ -826,12 +831,12 @@ footer{
 
 
 #head.active{
-background-color: #473f3fda;
- height:20vh;
- color: black;
- border-radius: 0 0 2em 0;
+background-color: #4d4d4d8f;
+width: 2vw;
  }
-
+#head.active .logo{
+  display: none;
+}
 #head.active .links{
   display: none;
 }
@@ -974,7 +979,7 @@ background-color: #473f3fda;
   margin-bottom: -40vh; justify-content: center;
 }
 .IMG-slider img{
- 
+ transition: 0.5s ease-in-out;
 }
 .IMG-slider .images  {
   height: 50%;
@@ -1011,10 +1016,7 @@ background-color: #473f3fda;
 .sliders:hover{
   background: rgba(255,255,255,0.2);
 }
- 
- .left{
-   margin-top: -40px; z-index:  99;
- }
+
 .right{
   right:  0;height: 45px; margin-top: -40px;text-align: right; z-index:  99;
 }

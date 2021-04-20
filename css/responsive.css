@@ -10,15 +10,11 @@
        .main-sector div{
          width: 100%;border: 0;
        }
-       .wrapper{
-         width: 3vw;
-       }
-       .wrapper nav .logo{
+       .content .logo{
          display: none;
        }
-       #head.active{
-         height: 10vh;
-         border-radius:0 0 7.5px 0;
+       #head{
+         width: 2vw;
        }
  }
  
