@@ -345,11 +345,11 @@ animation: picture 1s ;
 
 }
 .block-news div{
-    border: ridge  black 3px;
-   width: 500px;
-   box-shadow: 2px 3px 2px 2px rgba(238, 11, 11, 0.603); 
-   height: auto;
-   text-align: center; 
+  border: ridge  black 4px;
+  width: 40vw;margin-top: 30px;
+  box-shadow: 20px 11px 112px 22px rgba(51, 42, 42, 0.356);
+  height: auto;
+  text-align: center; background-color: rgba(107, 103, 103, 0.267);
 }
 
 
@@ -978,13 +978,11 @@ width: 2vw;
   margin-top: 30vh; 
   margin-bottom: -40vh; justify-content: center;
 }
-.IMG-slider img{
- transition: 0.5s ease-in-out;
-}
+
 .IMG-slider .images  {
   height: 50%;
   width: 50%;margin: auto;
-  text-align: center;  
+  text-align: center;  border: solid black 3px; border-radius: 10px;
 }
 .IMG-slider .images   #images{
   height: 100%;
@@ -1016,10 +1014,12 @@ width: 2vw;
 .sliders:hover{
   background: rgba(255,255,255,0.2);
 }
-
-
+ 
+ .left{
+   margin-top: -40px; z-index:  99; margin-left: 150px;
+ }
 .right{
-  right:  0;height: 45px; margin-top: -40px;text-align: right; z-index:  99;
+  right:  0;height: 45px; margin-top: -40px;text-align: right; z-index:  99;margin-right: 150px;
 }
 .sliders span  {
   line-height:40px;
