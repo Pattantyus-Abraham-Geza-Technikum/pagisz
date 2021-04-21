@@ -1017,6 +1017,7 @@ width: 2vw;
   background: rgba(255,255,255,0.2);
 }
 
+
 .right{
   right:  0;height: 45px; margin-top: -40px;text-align: right; z-index:  99;
 }
