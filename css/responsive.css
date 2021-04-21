@@ -13,9 +13,6 @@
        .content .logo{
          display: none;
        }
-       #head{
-         width: 2vw;
-       }
  }
  
  
@@ -118,6 +115,13 @@
 @media screen and (max-width: 1550px){
     .wrapper{
       z-index: 3;
+      width: 10vw;
+    }
+    #head.active{
+      width: 4vw;
+    }
+    #head.active nav .links{
+      visibility:visible;
     }
     .wrapper nav{
       padding: 0 20px;
@@ -130,7 +134,7 @@
       padding: 8px 13px;
     }
     .wrapper .search-box{
-      max-width: calc(100% - 100px);
+      max-width: 100%;
     }
     .wrapper .search-box input{
       padding: 0 100px 0 15px;
