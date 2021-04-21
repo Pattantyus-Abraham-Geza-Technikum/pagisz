@@ -6,8 +6,9 @@
 }
 body{
     font-size: 18px;
-       overflow-x: hidden;   
-      width: 100%;
+    overflow-x: hidden;   
+    width: 100%;
+    background-color: #9FC0D1;
 }
 [data-title]{
   position: relative;
@@ -41,8 +42,8 @@ body{
   display: flex;
   flex-wrap: wrap;
   color: white;  
-  font-size: 40px;
-  height: 8vh; 
+  font-size: 3vw;
+  height: 10vw; 
   text-align: center;
   padding:10px 150px 20px;
     
@@ -58,13 +59,13 @@ body{
 }
 #btn-login{
 background-color: #49a0c2;
-font-size: 20px;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 border: solid 5px;
 border-image: radial-gradient( #33b7df, #1140a5) 1;
 cursor: pointer;
-width: 140px;  margin-top: -8vh;margin-right: 40px;
-height: 50px;   
+margin-top: -5.8vw;margin-right: 2vw;  
+height: 3vw;
+width: 8vw;
 transform: translateY(20%);
 color: #f0f0f0; 
 display: flex; 
@@ -81,6 +82,9 @@ transform:translateY(20%) scale(0.94);
  justify-content: center;
 }
   
+.welcome{
+
+}
 
 .main-box{
  width: 100%;
@@ -104,6 +108,11 @@ transform:translateY(20%) scale(0.94);
   opacity: 1;transition:  1s ease-in-out;
 }
 
+.pg_img{
+  margin-top: 30px; 
+  border: 0.3vw solid #2589BD;
+}
+
 .picture-links{
  
 
@@ -113,21 +122,15 @@ transform:translateY(20%) scale(0.94);
   animation: head 2s ;
   
  
- background: linear-gradient(rgb(16, 8, 126),rgb(3, 7, 63, 0.65));
- box-shadow: 3px 2px 4px 2px red  ;
+ background: #22577A;
+ box-shadow: 3px 2px 4px 2px #931F1D  ;
  height: auto;
- border-top: 5px solid red;
+ border-top: 7px solid #931F1D;
  justify-content: space-evenly;
   
  text-align: center; 
 
  
-  
-  
-  
-  
-   
-  
   
 }
 h3{
@@ -145,12 +148,6 @@ video{
    height: 85px;
     padding-top: 20px;
     animation: picture 1s ;
- 
-
-  
-  
-
-  
 
 }
 
@@ -256,6 +253,22 @@ img, iframe, video{
   height: auto;text-align: center; 
    
 }
+
+.actual{
+  font-family: monospace;
+  font-size: 1.6vw;
+  padding-left: 1vw;
+}
+
+.actual_taj{
+  font-family: monospace;
+  font-size: 1.8vw;
+}
+
+.title_taj{
+  font-size: 3vw;
+}
+
 .left-side-box{
  text-align: center;
  
@@ -345,17 +358,12 @@ animation: picture 1s ;
 
 }
 .block-news div{
-  border: ridge  black 4px;
+ border: ridge  black 4px;
   width: 40vw;margin-top: 30px;
   box-shadow: 20px 11px 112px 22px rgba(51, 42, 42, 0.356);
   height: auto;
   text-align: center; background-color: rgba(107, 103, 103, 0.267);
 }
-
-
-
-
-
 
 
 /*sroll bar design*/
@@ -853,13 +861,10 @@ width: 2vw;
 
 #btn-login{
   background-color: #49a0c2;
-  font-size: 20px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   border: solid 5px;
   border-image: radial-gradient( #33b7df, #1140a5) 1;
   cursor: pointer;
-  width: 140px;
-  height: 50px;
   transform: translateY(20%);
   color: #f0f0f0;
   display: flex;
