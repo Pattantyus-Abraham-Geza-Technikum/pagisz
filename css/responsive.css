@@ -10,8 +10,8 @@
        .main-sector div{
          width: 100%;border: 0;
        }
-       .content .logo{
-         display: none;
+       ul.links{
+         display: block;
        }
  }
  
@@ -133,6 +133,18 @@
     .content .links li a{
       padding: 8px 13px;
     }
+    nav .content .links{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+    }
+    nav .content .links li{
+      display: flex;
+      justify-content: center;
+      align-self: center;
+    }
     .wrapper .search-box{
       max-width: 100%;
     }
@@ -148,40 +160,21 @@
   }
   
   @media screen and (max-width: 1480px){
-    nav .content .links{
-      display: block;
-      position: fixed;
-      background: #171c24;
-      height: 100%;
-      width: 100%;
-      top: 100%;
-      left: 0;
-      margin-left: 0;
-      width: 20vw;
-      overflow-y: auto;
-      padding-bottom: 100px;
-      transition: all 0.3s ease;
+    ul.links li a,
+    ul.links li a span i{
+      font-size: 2vw!important;
     }
-    nav #show-menu:checked ~ .content .links{
-        top: 60px;
-    }
-    .content .links li{
-      margin: 15px 20px;
-    }
-    .content .links li a,
+    /* .content .links li a,
     .content .links li label{
       line-height: 40px;
       font-size: 20px;
       display: block;
       padding: 8px 18px;
       cursor: pointer;
-    }
-    .content .links li a.desktop-link{
-      display: none;
-    }
+    } */
   
     /* dropdown responsive code start */
-    .content .links ul,
+    /* .content .links ul,
     .content .links .mega-menu,
     .content .links .mega-menu2,
     .content .links .mega-menu3,
@@ -213,7 +206,7 @@
       font-size: 18px;
       line-height: 30px;
       border-radius: 5px!important;
-    }
+    } */
   }
   
   @media screen and (max-width: 400px){
@@ -232,6 +225,10 @@
     }
     .wrapper .search-box input{
       padding-right: 30px;
+    }
+    ul.links li a,
+    ul.links li a span i{
+      font-size: 5vw!important;
     }
   }
   

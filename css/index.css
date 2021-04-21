@@ -446,8 +446,8 @@ ul.links li ul li label:hover::before{
 }
 .wrapper{
   background: #171c24;
-  position: fixed;
   animation: head 2s;
+  position: fixed;
   width: 140px;
   height: 100vh;
   user-select: none;
@@ -1028,3 +1028,4 @@ width: 2vw;
   font-size: 35px;
   color: rgb(148, 3, 3);
 }
+
