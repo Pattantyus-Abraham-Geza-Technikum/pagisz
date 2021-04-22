@@ -1019,13 +1019,15 @@ width: 2vw;
 .sliders:hover{
   background: rgba(255,255,255,0.2);
 }
-
+ 
+ .left{
+   margin-top: -40px; z-index:  99;  margin-left: 150px;
+ }
 .right{
-  right:  0;height: 45px; margin-top: -40px;text-align: right; z-index:  99;margin-right: 150px;
+  right:  0;height: 45px; margin-top: -40px;text-align: right; z-index:  99; margin-right: 150px;
 }
 .sliders span  {
   line-height:40px;
   font-size: 35px;
   color: rgb(148, 3, 3);
 }
-
