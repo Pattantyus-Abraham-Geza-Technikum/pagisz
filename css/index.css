@@ -43,16 +43,17 @@ body{
   flex-wrap: wrap;
   color: white;  
   font-size: 50px;
-  height: 12vh; 
+  height: 9vh; 
   text-align: center;
-  padding:10px 150px 20px;
-    
+  padding: 00px 130px 30px;
+   
    justify-content: center;
   animation: 1s head; 
    
 }
 #login-box{
  justify-content: flex-end;
+ padding: 0px 0px 0px 20px;
 }
 #school-name{
  display: none;
@@ -82,10 +83,7 @@ transform:translateY(20%) scale(0.94);
  justify-content: center;
 }
   
-.welcome{
-
-}
-
+  
 .main-box{
  width: 100%;
  justify-content: center;
@@ -93,24 +91,13 @@ transform:translateY(20%) scale(0.94);
  margin-top: 15vh;
 }
 
-#arrow-anchor-to-top{
- width: 100%;  
- text-align: right;
- padding-right: 50px;margin-top: 200px ; margin-bottom: -200px;position: fixed;
- color: blanchedalmond;animation: anchor 1s;z-index: 99;
-}
+ 
 
-#anchor-to-top{
-  opacity: 0; animation: anchor 1s;
-  transition: 1s ease-in-out;
-}
-#anchor-to-top.active{
-  opacity: 1;transition:  1s ease-in-out;
-}
+ 
 
 .pg_img{
   margin-top: 30px; 
-  border: 0.3vw solid #2589BD;
+  border: 0.3vw solid #2589BD;border-radius: 30px;
 }
 
 .picture-links{
@@ -122,7 +109,7 @@ transform:translateY(20%) scale(0.94);
   animation: head 2s ;
   
  
- background: #22577A;
+ background: #4a606e;
  box-shadow: 3px 2px 4px 2px #931F1D  ;
  height: auto;
  border-top: 7px solid #931F1D;
@@ -140,15 +127,31 @@ video{
   width: 20vw;
 }
 .picture-links img{
-     width: 70px;
+     width: 100px;
    display: flex;
    flex-direction: row;
    text-align: center;
    align-items: center;
-   height: 85px;
+   height: 100px;
     padding-top: 20px;
     animation: picture 1s ;
 
+}
+#kreta:hover{
+  background-color: lawngreen;
+}
+.main-sector{
+  width: 100%;
+   
+  height: auto;
+  justify-content: center;
+  margin-top: 30px;
+}
+.left-side-box, .right-side-box{
+  width: 80%;
+  
+  height: auto;text-align: center; 
+   
 }
 
 
@@ -236,33 +239,21 @@ img, iframe, video{
  
 }
 
-.main-sector{
-  width: 100%;
-  
-  height: auto;
-  justify-content: center;
-  margin-top: 30px;
-}
-.left-side-box, .right-side-box{
-  width: 40%;
-  border-top: 5px groove green;
-  height: auto;text-align: center; 
-   
-}
+
 
 .actual{
   font-family: monospace;
-  font-size: 1.6vw;
+  font-size: 1.7rem;
   padding-left: 1vw;
 }
 
 .actual_taj{
   font-family: monospace;
-  font-size: 1.8vw;
+  font-size: 1.7rem;
 }
 
 .title_taj{
-  font-size: 3vw;
+  font-size: 1.7rem;
 }
 
 .left-side-box{
@@ -270,9 +261,7 @@ img, iframe, video{
  
  justify-content: center;}
 
- .right-side-box{
-border-right: 5px groove green;
-} 
+ 
 
   
 
@@ -318,7 +307,7 @@ text-align: left;
   animation: picture 1s ;
   padding:  80px; 
 }
-
+ 
 
 h1{
 animation: picture 1s ;
@@ -326,24 +315,6 @@ animation: picture 1s ;
 
 
 
-#table-top, tbody, thead{
- background-color: rgb(53, 53, 88);
- color: #f2f2f2; overflow-x: scroll; padding-bottom: 10px;
- border: 3px solid;
-  
-}
-
-
-
-#table-top li  {
-   text-decoration: none;
-   color: black;
-    
-}
-.blackbox{
-   padding-right:  50px;
-   justify-content: space-between;
-}
 
 .block-news{
    width: 100%;
@@ -698,9 +669,9 @@ footer a{
 }
 footer{
   position: relative;
-  width: 100vw;
+  width: 100vw;height: auto;
   background: #111;
-  color: floralwhite;
+  color: floralwhite;padding-top: 10vh;
   border-top: rgb(138, 55, 55) 5px solid ;
   margin: 50vh 0 0 auto;
 }
@@ -924,55 +895,6 @@ width: 2vw;
   }
 
 
-/* left side animation with js.*/
-@keyframes leftside-animation{
-  0%{
-    opacity:0;
-  }
-  100%{
-    opacity: 1; ;
-  }
-}
-
-
-
-#leftside{opacity: 0;}
- 
-#leftside{
-    -webkit-transition: all 1s ease-in-out;
-       -moz-transition: all 1s ease-in-out;
-         -o-transition: all 1s ease-in-out;
-        -ms-transition: all 1s ease-in-out;
-            transition: all 1s ease-in-out;
-  }
-
-#leftside.active{opacity:1; animation: leftside-animation 1s;   }
-
-
-/* right side animation with js.*/
-
-@keyframes rightside-animation{
-  0%{
-    opacity: 0;  
-  }
-  100%{
-    opacity: 1;  
-  }
-}
-
-
-
-#rightside{opacity: 0;}
- 
-#rightside{
-    -webkit-transition: all 4s ease-in-out;
-       -moz-transition: all 4s ease-in-out;
-         -o-transition: all 4s ease-in-out;
-        -ms-transition: all 4s ease-in-out;
-            transition: all 4s ease-in-out;
-  }
-
-#rightside.active{opacity:1; animation: rightside-animation 2s;   }
 
 
 .IMG-slider{
@@ -1031,3 +953,31 @@ width: 2vw;
   font-size: 35px;
   color: rgb(148, 3, 3);
 }
+/* icon animation at top: kreta, moodle....*/
+
+.fa-book, .fa-facebook, .fa-chalkboard-teacher, .fa-envelope-open{
+  transition-duration: 1s;color: #e7dada;
+  font-size: 4rem;
+  padding-top: 20px;
+}
+
+.fa-book:hover, .fa-facebook:hover, .fa-chalkboard-teacher:hover, .fa-envelope-open:hover{
+  position: relative;color: rgb(134, 134, 206);
+  animation-timing-function: cubic-bezier(1.075, 0.82, 0.165, 1);
+  transition-duration: 1s;
+  transform-style: preserve-3d;
+  opacity: 0.68;
+  transform: rotate(10deg) scale(1.2) ;
+   
+  
+   
+}
+.fa-envelope-open:hover{
+  color: #1acccc;
+}
+.fa-facebook:hover{
+  color: rgb(3, 3, 109);
+}
+ .fa-chalkboard-teacher:hover{
+   color: rgb(246, 160, 0);
+ }
