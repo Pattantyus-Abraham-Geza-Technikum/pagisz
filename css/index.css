@@ -243,17 +243,17 @@ img, iframe, video{
 
 .actual{
   font-family: monospace;
-  font-size: 1.7rem;
+  font-size: 1.2vw;
   padding-left: 1vw;
 }
 
 .actual_taj{
   font-family: monospace;
-  font-size: 1.7rem;
+  font-size: 1.2vw;
 }
 
 .title_taj{
-  font-size: 1.7rem;
+  font-size: 2.8vw;
 }
 
 .left-side-box{
