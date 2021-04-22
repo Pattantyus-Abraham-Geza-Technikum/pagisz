@@ -164,6 +164,9 @@
     ul.links li a span i{
       font-size: 2vw!important;
     }
+    ul.links li a img{
+      transform: scale(0.8);
+    }
     /* .content .links li a,
     .content .links li label{
       line-height: 40px;
@@ -213,8 +216,9 @@
     .wrapper nav{
       padding: 0 10px;
     }
-    .content .logo a{
-      font-size: 27px;
+    .content .logo a svg{
+      transform-origin: center;
+      transform: scale(0.3);
     }
     .wrapper .search-box{
       max-width: calc(100% - 70px);
@@ -229,6 +233,9 @@
     ul.links li a,
     ul.links li a span i{
       font-size: 5vw!important;
+    }
+    ul.links li a img{
+      transform: scale(0.4);
     }
   }
   

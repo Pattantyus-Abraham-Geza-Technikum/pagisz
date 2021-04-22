@@ -1,6 +1,6 @@
 const dropIcon = $('#drop');
 const head = $('#head');
-const logo = $('content logo');
+const logo = $('content logo a img');
 
 $(window).scroll(function() {
 	var $height = $(window).scrollTop();
@@ -51,6 +51,7 @@ dropIcon.click(()=>{
 	dropIcon.toggleClass('dropped');
 	head.toggleClass('active');
 });
-logo.click(()=>{
-	logo.app('<a><i class="fas fa-angle-right"></i></a>');
-});
+if(window.innerWidth < 1400)
+{
+	logo.css('transform','scale',0.1);
+}

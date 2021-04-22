@@ -159,10 +159,6 @@ video{
  flex-wrap: wrap;
  justify-content: center;animation: picture 1s ;
 }
-.logo{
-  
- width: 40%;
-}
 .top-text{
   
  width: 40%;
@@ -475,7 +471,6 @@ nav .content{
   justify-content: space-evenly;
 }
 nav > * > ul.links{
-  width: 20vw;
   row-gap: 0.2em;
 }
 .content .links li{
@@ -493,18 +488,22 @@ nav > * > ul.links{
 .links img{
   transform: scale(.85);
 }
-nav .logo{
-  height: clamp(15vh, 20vh, 20vh);
-  padding: 0;
-  margin:0 0 -2em 10px;
+.content .logo,
+.content .logo a{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 10vw;
 }
-.logo a{
-  flex-direction: row;
-  justify-content: center;
+.content .logo{
+  height:20vh;
+  margin-bottom: -1.5em;
 }
-div.logo a svg{
-  top: 50%;
-  left: 50%;
+.content .logo a{
+  height: 70%;
+}
+.content .logo a img{
+  transform: scale(0.24);
 }
 .content .links li a,
 .content .links li label{
