@@ -39,11 +39,11 @@ body{
  .contacts{
   width: 100%;
   background: linear-gradient(rgb(15, 15, 32), rgb(4, 4, 12));
-  display: flex;
+  display: flex; 
   flex-wrap: wrap;
   color: white;  
-  font-size: 3vw;
-  height: 10vw; 
+  font-size: 50px;
+  height: 12vh; 
   text-align: center;
   padding:10px 150px 20px;
     
@@ -59,18 +59,18 @@ body{
 }
 #btn-login{
 background-color: #49a0c2;
+font-size: 20px;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 border: solid 5px;
 border-image: radial-gradient( #33b7df, #1140a5) 1;
 cursor: pointer;
-margin-top: -5.8vw;margin-right: 2vw;  
-height: 3vw;
-width: 8vw;
+width: 140px;  margin-top: -8vh; 
+height: 50px;   
 transform: translateY(20%);
 color: #f0f0f0; 
 display: flex; 
 justify-content: center;
-align-items: center;  
+align-items: center;  margin-right: 40px;
 }
 #btn-login:hover{
 transform:translateY(20%) scale(0.94);
