@@ -632,9 +632,10 @@ nav > * > ul.links{
   align-items: center;
 }
 #drop.dropped{
+  height: 16px;
   position: absolute;
   transform: rotate(180deg);
-  display: block;
+  bottom: 10px;
 }
 
 
