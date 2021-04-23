@@ -116,12 +116,6 @@ body{
    z-index: 3;
    width: 10vw;
  }
- #head.active{
-   width: 4vw;
- }
- #head.active nav .links{
-   visibility:visible;
- }
  .wrapper nav{
    padding: 0 20px;
 

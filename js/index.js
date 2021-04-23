@@ -1,6 +1,7 @@
 const dropIcon = $('#drop');
 const head = $('#head');
 const logo = $('content logo a img');
+const scrollNav = $('#scroll-nav');
 
 $(window).scroll(function() {
 	var $height = $(window).scrollTop();
@@ -8,6 +9,7 @@ $(window).scroll(function() {
   if($height > 90 && !(dropIcon.hasClass('dropped') || head.hasClass('active'))) {
 		head.addClass('active');
 		dropIcon.addClass('active');
+		scrollNav.addClass('active');
 	}
 });
 

@@ -39,47 +39,59 @@ body{
  .contacts{
   width: 100%;
   background: linear-gradient(rgb(15, 15, 32), rgb(4, 4, 12));
-  display: flex; 
-  flex-direction: column;
+  display: flex;
   flex-wrap: wrap;
   color: white;  
   font-size: 50px;
-  height: 9vh; 
+  height: 20vh; 
   text-align: center;
-   justify-content: center;
+  justify-content: center;
+  align-items: center;
   animation: 1s head; 
-   
+}
+#scroll-nav{
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  background-image: linear-gradient(to right, #031c4691, #0227809e );
+  transition:all .5s cubic-bezier(0.01, 0.46, 0.67, 1);
+}
+#scroll-nav.active{
+  visibility: visible;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6vh;
+  padding: 0.5rem 3em;
+  z-index: 5;
+  transition:all .5s cubic-bezier(0.01, 0.46, 0.67, 1);
 }
 #login-box{
- justify-content: flex-end;
- padding: 0px 0px 0px 20px;
-}
-#school-name{
- display: none;
+  margin-right: 3em;
+  width: 20%;
+  height: 100%;
 }
 #btn-login{
-background-color: #49a0c2;
-font-size: 20px;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-border: solid 5px;
-border-image: radial-gradient( #33b7df, #1140a5) 1;
-cursor: pointer;
-width: 140px;  margin-top: -8vh; 
-height: 50px;   
-transform: translateY(20%);
-color: #f0f0f0; 
+  font-size: 32px;
+color: #f0f0f0;
+visibility: hidden;
+}
+#scroll-nav.active #btn-login{
+  visibility: visible;
 display: flex; 
 justify-content: center;
-align-items: center;  margin-right: 40px;
+align-items: center;
 }
-#btn-login:hover{
-transform:translateY(20%) scale(0.94);
+#btn-login::before{
+  opacity: 0;
+  content: "Bejelentkezés";
+  font-size: 1.2rem;
+   transition: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-#school-name{
- width: 100%;
- font-size: 20px;
- text-align: center;
- justify-content: center;
+#btn-login:hover::before{
+  opacity: 1;
+  margin-right: 1vw;
 }
   
   
@@ -594,18 +606,12 @@ nav > * > ul.links{
   display: none;
   color: #f0f0f0;
   font-size: 1.5em;
-  height: 100vh;
 }
 #drop.active{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#drop.dropped{
-  height: 16px;
-  position: absolute;
-  transform: rotate(180deg);
-  bottom: 10px;
+  margin-left: 10vw;
 }
 
 
@@ -668,7 +674,7 @@ footer a{
 }
 footer{
   position: relative;
-  width: 100vw;height: auto;
+  width: 100%;height: auto;
   background: #111;
   color: floralwhite;padding-top: 10vh;
   border-top: rgb(138, 55, 55) 5px solid ;
@@ -810,7 +816,9 @@ footer{
 
 #head.active{
 background-color: #4d4d4d8f;
-width: 2vw;
+  width: 0;
+  padding: 0;
+  margin: 0;
  }
 #head.active .logo{
   display: none;
@@ -829,21 +837,6 @@ width: 2vw;
 
 
 
-#btn-login{
-  background-color: #49a0c2;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  border: solid 5px;
-  border-image: radial-gradient( #33b7df, #1140a5) 1;
-  cursor: pointer;
-  transform: translateY(20%);
-  color: #f0f0f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#btn-login:hover{
-  transform:translateY(20%) scale(0.94);
-}
 /* lanimation at the begining*/
 @keyframes  head{
   0%{
