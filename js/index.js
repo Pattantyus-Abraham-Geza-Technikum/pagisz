@@ -2,15 +2,21 @@ const dropIcon = $('#drop');
 const head = $('#head');
 const logo = $('content logo a img');
 const scrollNav = $('#scroll-nav');
+const beiskolazas = $('.Beiskolazas');
 
 $(window).scroll(function() {
 	var $height = $(window).scrollTop();
 	head.removeClass('active');
+	beiskolazas.removeClass('active');
   if($height > 90 && !(dropIcon.hasClass('dropped') || head.hasClass('active'))) {
 		head.addClass('active');
 		dropIcon.addClass('active');
 		scrollNav.addClass('active');
 	}
+	if($height < 90)
+		scrollNav.removeClass('active');
+	if($height > 570)
+		beiskolazas.addClass('active');
 });
 
 
