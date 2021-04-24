@@ -12,6 +12,12 @@
     ul.links{
       display: block;
     }
+    #scroll-nav.active{
+      height: 10vh;
+    }
+    #scroll-nav.active > *{
+      font-size: 1.2em;
+    }
 }
 
 
@@ -44,9 +50,6 @@
 .logo-text li{
  font-size: 18px;
 }
-}
-@media only screen and (max-width:  1150px){
-
 
 body{
   overflow-x: hidden;
@@ -86,6 +89,9 @@ body{
  }
  .picture-links{
      grid-template-columns: max-content max-content;
+ }
+ ul.links li a{
+   font-size: 4vw;
  }
 }
 @media only screen and (max-width:  450px){
@@ -145,7 +151,6 @@ body{
    padding: 0 100px 0 15px;
  }
  #btn-login{
-   font-size: 1.6vw;
    width: fit-content;
    height: 4vw;
    
@@ -153,9 +158,13 @@ body{
 }
 
 @media screen and (max-width: 1480px){
+  ul.links{
+    margin-top: 1em;
+    row-gap: 0.35em!important;
+  }
  ul.links li a,
  ul.links li a span i{
-   font-size: 2.4vw!important;
+   font-size: 1.6vw!important;
  }
  ul.links li a img{
    transform: scale(0.8);
