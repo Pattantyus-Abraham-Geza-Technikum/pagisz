@@ -3,6 +3,8 @@
   font-family: 'Nunito', sans-serif;
   margin:0;
    padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 body{
     font-size: 18px;
@@ -444,17 +446,11 @@ ul.links li ul li label:hover::before{
   /*menu drop*/
 
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
 .wrapper{
   background: #171c24;
   animation: head 2s;
   position: fixed;
-  width: 10vw;
+  width: 20vw;
   height: 100vh;
   user-select: none;
   padding: 10px 5px;
@@ -521,12 +517,15 @@ nav > * > ul.links{
   font-size: 18px;
   font-weight: 500;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 .content .links li label{
   display: none;
 }
 .content .links li:hover{
   background-color: #ffffff32;
+  width: fit-content;
 }
 .wrapper .search-icon,
 .wrapper .menu-icon{
@@ -629,17 +628,28 @@ nav > * > ul.links{
   width: 243px;
 }
 
-#drop{
-  cursor: pointer;
-  display: none;
-  color: #f0f0f0;
-  font-size: 1.5em;
-}
-#drop.active{
+#bars{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10vw;
+  cursor: pointer;
+  color: #f0f0f0;
+  font-size: 1.5em;
+}
+
+#drop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #f0f0f0;
+  font-size: 1.5em;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+}
+#drop.dropped{
+  display: none;
 }
 
 
