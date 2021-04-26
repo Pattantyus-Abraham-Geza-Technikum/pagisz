@@ -476,17 +476,16 @@ nav .content{
   z-index: 2;
   justify-content: space-evenly;
 }
-nav > * > ul.links{
+nav .content .links{
   row-gap: 0.2em;
 }
 .content .links li{
   list-style: none;
   height: clamp(6vh, 8vh, 8vh);
-  width: clamp(6vh, 8vh, 80%);
-  margin: 0 auto;
+  width: fit-content;
   padding:5px;
   border-radius: 5px;
-  justify-content: center;
+  flex-direction: row;
 }
 .content .links i{
   font-size: 1.5em;
@@ -520,12 +519,14 @@ nav > * > ul.links{
   display: flex;
   align-items: center;
 }
+.content .links li a div{
+  margin-left: 1vw;
+}
 .content .links li label{
   display: none;
 }
 .content .links li:hover{
   background-color: #ffffff32;
-  width: fit-content;
 }
 .wrapper .search-icon,
 .wrapper .menu-icon{
