@@ -15,13 +15,11 @@ dropIcon.click(()=>{
 	head.toggleClass('active');
 });
 
-$(window).scroll(function() {
+$(window).scroll(()=>{
 	var $height = $(window).scrollTop();
 	beiskolazas.removeClass('active');
 	dropIcon.removeClass('dropped');
-	head.removeClass('active');
   if($height > 90 ) {
-		head.addClass('active');
 		dropIcon.addClass('dropped');
 		scrollNav.addClass('active');
 	}

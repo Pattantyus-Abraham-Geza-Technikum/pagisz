@@ -455,6 +455,10 @@ ul.links li ul li label:hover::before{
   user-select: none;
   padding: 10px 5px;
   z-index: 100;
+  visibility: hidden;
+}
+.wrapper.active{
+  visibility: visible;
 }
 
 .wrapper nav{
@@ -853,19 +857,6 @@ footer{
 
 
 
-#head.active{
-background-color: #4d4d4d8f;
-  width: 0;
-  padding: 0;
-  margin: 0;
- }
-#head.active .logo{
-  display: none;
-}
-#head.active .links{
-  display: none;
-}
-
 #head{
   -webkit-transition: all 1s ease-in-out;
 	   -moz-transition: all 1s ease-in-out;
@@ -879,9 +870,11 @@ background-color: #4d4d4d8f;
 /* lanimation at the begining*/
 @keyframes  head{
   0%{
+    opacity: 0;
     left:-200px
   }
   100%{
+    visibility: visible;
     left: 0;
   }
 }
