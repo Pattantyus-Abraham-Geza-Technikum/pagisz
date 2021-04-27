@@ -1,11 +1,10 @@
 @media screen and (max-width: 1550px){
   .wrapper{
     z-index: 3;
-    width: 10vw;
+    width: 40vw
   }
   .wrapper nav{
     padding: 0 20px;
- 
   }
   nav .content .links{
     z-index: 2;

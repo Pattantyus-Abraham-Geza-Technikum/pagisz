@@ -17,10 +17,10 @@ dropIcon.click(()=>{
 
 $(window).scroll(function() {
 	var $height = $(window).scrollTop();
-	head.removeClass('active');
 	beiskolazas.removeClass('active');
-	dropIcon.removeClass('dropped')
-  if($height > 90 && !head.hasClass('active')) {
+	dropIcon.removeClass('dropped');
+	head.removeClass('active');
+  if($height > 90 ) {
 		head.addClass('active');
 		dropIcon.addClass('dropped');
 		scrollNav.addClass('active');

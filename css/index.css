@@ -972,12 +972,17 @@ background-color: #4d4d4d8f;
 .sliders:hover{
   background: rgba(255,255,255,0.2);
 }
- 
+.left, .right{
+  z-index:  2;
+}
  .left{
-   margin-top: -40px; z-index:  99;  margin-left: 150px;
+   z-index:  2;
  }
 .right{
-  right:  0;height: 45px; margin-top: -40px;text-align: right; z-index:  99; margin-right: 150px;
+  right:  0;
+  height: 45px;
+  text-align: right;
+   margin-right: 150px;
 }
 .sliders span  {
   line-height:40px;
